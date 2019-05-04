@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+:root {
+    --color-x: firebrick;
+    --color-o: #6a6a6a;
+    --color-Human: firebrick;
+    --color-Computer: #6a6a6a;
+    --color-Ganador: #7fff00;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'helvetica nue', sans-serif;
+    font-size: 3rem;
+
+    background-color: #222;
+    color: var(--color-o);
+    color: #444;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 1rem 2rem;
+  
+  background: lightgrey;
+
+  
+  /*background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);*/
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.container > * { /*marcador, game, controles*/
+    margin-bottom: 1rem;
+}
+
+.container > *:last-child {
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.marbles {
+  display:flex;
+  margin-right: 1rem;
+}
+
+.marble {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.hints {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  padding: 0.3rem 0;
+}
+
+.hint {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin: 0.1rem;
+
+  background-color: #999;
+}
+
+.marbles-colors, .marbles-solucion {
+  display:flex;
+  justify-content: center;
+}
+
+.marbles-colors {
+  background-color: #cacaca;
+  box-shadow:         inset 0 0 10px #000000;
+  border-radius: 5px;
+  padding: 0.4rem 0.2rem;
+}
+
+.marble-colors, .marble-solucion {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin: 0.4rem;
+}
+
+.marbles-solucion {
+  /*background-color: #6a6a6a;*/
+  /*box-shadow:         inset 0 0 10px #000000;*/
+  padding: 0.4rem;
+  border-radius: 8px;
+}
+.marble-solucion {
+  background-color: #333;
+  box-shadow:         inset 0 0 10px #000000;
+}
+
+.marble-colors {
+  box-shadow:         inset 0 0 15px #444;
+}
+
+.controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.controles .message {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.hide {
+  /*opacity: 0;*/
+}
+
+.computer:hover, .check:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.marble-colors:hover {
+  cursor: pointer;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
